@@ -20,7 +20,7 @@ def screen_capture_detect():
     
     # Modeli yükle
     print("🔄 Model yükleniyor...")
-    model = YOLO('runs/detect/rust_person_detector5/weights/best.pt')
+    model = YOLO('best.pt')
     model.to('cuda')
     print("✅ Model yüklendi (CUDA)!")
     
@@ -160,3 +160,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
